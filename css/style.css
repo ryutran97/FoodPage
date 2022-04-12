@@ -30,7 +30,7 @@ header{
     background-color: var(--bg1);
 }
 header #top{
-    width: 1920px;
+    width: 100%;
     height: 1210px;
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +109,7 @@ header #search #button{
     background-color: var(--bg3);
     color: var(--fcnormal);
     font-size: var(--fz30);
+    border: none;
 }
 header #location{
     border-radius:  0px 100px 100px 0px;
@@ -170,8 +171,13 @@ header img{
     position: absolute;
     width: 878px;
     height: 870px;
-    left: 827px;
+    left: 927px;
     top: 250px;
+}
+header #lecture{
+    width: 30%;
+    top: 50px;
+    left: 1250px;
 }
 header #middle{
     display: flex;
@@ -257,4 +263,47 @@ header #bot svg{
     position: absolute;
     bottom: 491px;
     right: 391px;
+}
+
+/* Booking */
+#booking {
+    height: 1080px;
+    width: 1920px;
+    background-color: var(--bg2);
+    position: relative;
+    padding-top:215px ;
+}
+#booking img{
+    z-index: 2;
+}
+#booking #img1{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#booking #img2{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#booking #mainbooking{
+    background-color: var(--fcnormal);
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 40%;
+    transform: translate(-50%,0);
+    padding:50px 0;
+}
+#booking #main{
+    width: 80%;
+    height: 80%;
+    left: 20%;
+    background-color: #707070;
+    position: relative;
+}
+#booking #main span{
+
 }
