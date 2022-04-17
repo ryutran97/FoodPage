@@ -1,0 +1,17 @@
+
+* {
+    box-sizing: border-box;
+}
+h2,h1,h3 p {
+    margin: 0;
+}
+body {
+    // min-height: 100vh;
+    background-color: var(--color-bg1);
+    // font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    // line-height: 1.5;
+    margin: 0;
+    text-transform: capitalize;
+}
+  

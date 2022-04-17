@@ -1,0 +1,254 @@
+@use "../utils" as *;
+@use "../globals" as *;
+
+//Header
+header{
+    display: flex;
+    section{
+        width: 70%;
+        height: auto;
+        .left__top{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h2{
+                margin: 0 0 0 rem(133)
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                a{
+                    margin-left: rem(40);
+                }
+            }    
+        }
+        .left__main{
+            h1{
+                margin-left:rem(124);
+            }
+            h3{
+            margin-left:rem(132);
+            width: 75%;
+            margin-top: 0;
+            }
+            .search{
+                display: flex;
+                max-width: rem(670);
+                margin-left:rem(135);
+                background-color:var(--color-white);
+                #text{
+                    width: 70%;
+                    width: 100%;
+                    padding: rem(36);
+                    border: none;
+                }
+                #button{
+                    width: 30%;
+                    margin:rem(9) rem(11) rem(9) 0;
+                    height: auto;
+                    border: none;
+                    border-radius: rem(60) 0 0 0;
+                    background-color: var(--color-red);
+                }
+            }
+        }
+        .left__bottom{
+            max-width: rem(280);
+            background-color: var(--color-red);
+            border-radius: 0 rem(100) rem(100) 0;
+            margin-top: rem(215);
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
+            img{
+                width: rem(25);
+                display: inline-block;
+                margin-left: rem(32);
+                margin-right: rem(20);
+            }
+            h4{
+                display: inline-block;
+                margin: rem(17);
+            }
+        }
+    }
+    aside{
+        width: 30%;
+        background-color: var(--color-red);
+        height: auto;
+        .right__top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: rem(23);
+            margin-left: rem(70);
+            p{
+                margin: rem(15);
+            }
+        }
+        .right__main{
+            margin-top: rem(50);
+            #food{
+                width: 45%;
+                position: absolute;
+                right: 10%;
+                z-index: 2;
+            }
+            #lecture{
+                width: 35%;
+                position: absolute;
+                right: 10%;
+                top: -5%;
+                z-index: 1;
+            }
+        }
+        .right__bottom{
+            width: auto;
+            margin-top: rem(900);
+            margin-bottom: rem(194);
+            margin-left: rem(207);
+        }
+    }
+}
+
+// Restaurant
+.restaurant{
+    width: auto;
+    height: auto;
+    padding-bottom: rem(200) ;
+    .restaurant__top{
+        display: flex;
+        margin-top: rem(49);
+        .top_left{
+            width: 40%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            margin-left: rem(135);
+            margin-right: rem(149);
+            div{
+                width: 5%;
+                height: 8rem;
+                background-color: var(--color-red);
+                margin-right: rem(30);
+            }
+        }
+        .top_right{
+            width: 35%;
+            height: auto;
+        }
+    }
+    .restaurant__bot{
+        margin-top: rem(150);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: rem(40);
+        height: auto;
+        .fire-water{
+            background-image: url(../../../img/restaurant/Rectangle\ 7.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: rem(500);
+            #content{
+                background-color: var(--color-red-op7);
+                padding: rem(40) rem(60);
+                position: relative;
+                img{
+                    display: inline-block;
+                    margin-right: rem(20);
+                }
+                p{
+                    display: inline-block;
+                }
+                input{
+                    padding: rem(20) rem(64);
+                    position: absolute;
+                    right: 0;
+
+                }
+            }
+        }
+        .woton{
+            background-image: url(../../../img/restaurant/Rectangle\ 7-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: rem(500);
+            #content{
+                background-color: var(--color-red-op7);
+                padding: rem(40) rem(60);
+                position: relative;
+                img{
+                    display: inline-block;
+                    margin-right: rem(20);
+                }
+                p{
+                    display: inline-block;
+                }
+                input{
+                    padding: rem(20) rem(64);
+                    position: absolute;
+                    right: 0;
+
+                }
+            }
+        }
+        .see-more{
+            margin: auto 0;
+        }
+    }
+}
+
+//Booking
+.booking{
+    background-color: var(--color-bg2);
+    height: 1000px;
+    // padding: rem(265) rem(415) rem(265) rem(275);
+    padding-top: rem(265);
+    .booking__main{
+        margin: 0 auto;
+        margin-right: rem(415);
+        width: 70%;
+        height: 560px;
+        background-color: var(--color-white);
+        text-align: center;
+        padding: rem(100) rem(100) rem(400) rem(250);
+        .main__top{
+            #redline{
+                margin: 0 auto;
+                width: 20%;
+                height: rem(15);
+                background-color: var(--color-red);
+            }
+            h2{
+                margin-top: rem(20);
+            }
+        }
+        .main__mid{
+            .booking__search{
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                max-width: rem(670);
+                margin-left:rem(135);
+                margin-top: rem(60);
+                background-color:var(--color-white);
+                box-shadow: rem(2) rem(2) rem(30) rem(2) var(--color-bg1);
+                #text{
+                    width: 70%;
+                    width: 100%;
+                    padding: rem(36);
+                    border: none;
+                }
+                #button{
+                    width: 30%;
+                    margin:rem(14) rem(14) rem(14) 0;
+                    height: auto;
+                    border: none;
+                    // border-radius: rem(60) 0 0 0;
+                    background-color: var(--color-red);
+                }
+            }
+        }
+    }
+
+}

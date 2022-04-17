@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+}
+
+h2, h1, h3 p {
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-bg1);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+:root {
+  --color-bg1: #FFF5EC;
+  --color-bg2: #FFEDDE;
+  --color-red: #FE043C;
+  --color-text-blue: #2E266F;
+  --color-text-grey: #707070;
+  --color-white:white;
+  --color-red-op7: hsla(347, 99%, 51%, 0.7);
+}
+
+header {
+  display: flex;
+}
+header section {
+  width: 70%;
+  height: auto;
+}
+header section .left__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header section .left__top h2 {
+  margin: 0 0 0 8.3125rem;
+}
+header section .left__top nav {
+  display: flex;
+  align-items: center;
+}
+header section .left__top nav a {
+  margin-left: 2.5rem;
+}
+header section .left__main h1 {
+  margin-left: 7.75rem;
+}
+header section .left__main h3 {
+  margin-left: 8.25rem;
+  width: 75%;
+  margin-top: 0;
+}
+header section .left__main .search {
+  display: flex;
+  max-width: 41.875rem;
+  margin-left: 8.4375rem;
+  background-color: var(--color-white);
+}
+header section .left__main .search #text {
+  width: 70%;
+  width: 100%;
+  padding: 2.25rem;
+  border: none;
+}
+header section .left__main .search #button {
+  width: 30%;
+  margin: 0.5625rem 0.6875rem 0.5625rem 0;
+  height: auto;
+  border: none;
+  border-radius: 3.75rem 0 0 0;
+  background-color: var(--color-red);
+}
+header section .left__bottom {
+  max-width: 17.5rem;
+  background-color: var(--color-red);
+  border-radius: 0 6.25rem 6.25rem 0;
+  margin-top: 13.4375rem;
+  display: flex;
+  align-items: center;
+}
+header section .left__bottom img {
+  width: 1.5625rem;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 1.25rem;
+}
+header section .left__bottom h4 {
+  display: inline-block;
+  margin: 1.0625rem;
+}
+header aside {
+  width: 30%;
+  background-color: var(--color-red);
+  height: auto;
+}
+header aside .right__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4375rem;
+  margin-left: 4.375rem;
+}
+header aside .right__top p {
+  margin: 0.9375rem;
+}
+header aside .right__main {
+  margin-top: 3.125rem;
+}
+header aside .right__main #food {
+  width: 45%;
+  position: absolute;
+  right: 10%;
+  z-index: 2;
+}
+header aside .right__main #lecture {
+  width: 35%;
+  position: absolute;
+  right: 10%;
+  top: -5%;
+  z-index: 1;
+}
+header aside .right__bottom {
+  width: auto;
+  margin-top: 56.25rem;
+  margin-bottom: 12.125rem;
+  margin-left: 12.9375rem;
+}
+
+.restaurant {
+  width: auto;
+  height: auto;
+  padding-bottom: 12.5rem;
+}
+.restaurant .restaurant__top {
+  display: flex;
+  margin-top: 3.0625rem;
+}
+.restaurant .restaurant__top .top_left {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-left: 8.4375rem;
+  margin-right: 9.3125rem;
+}
+.restaurant .restaurant__top .top_left div {
+  width: 5%;
+  height: 8rem;
+  background-color: var(--color-red);
+  margin-right: 1.875rem;
+}
+.restaurant .restaurant__top .top_right {
+  width: 35%;
+  height: auto;
+}
+.restaurant .restaurant__bot {
+  margin-top: 9.375rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  height: auto;
+}
+.restaurant .restaurant__bot .fire-water {
+  background-image: url(../../../img/restaurant/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 31.25rem;
+}
+.restaurant .restaurant__bot .fire-water #content {
+  background-color: var(--color-red-op7);
+  padding: 2.5rem 3.75rem;
+  position: relative;
+}
+.restaurant .restaurant__bot .fire-water #content img {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+.restaurant .restaurant__bot .fire-water #content p {
+  display: inline-block;
+}
+.restaurant .restaurant__bot .fire-water #content input {
+  padding: 1.25rem 4rem;
+  position: absolute;
+  right: 0;
+}
+.restaurant .restaurant__bot .woton {
+  background-image: url(../../../img/restaurant/Rectangle\ 7-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 31.25rem;
+}
+.restaurant .restaurant__bot .woton #content {
+  background-color: var(--color-red-op7);
+  padding: 2.5rem 3.75rem;
+  position: relative;
+}
+.restaurant .restaurant__bot .woton #content img {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+.restaurant .restaurant__bot .woton #content p {
+  display: inline-block;
+}
+.restaurant .restaurant__bot .woton #content input {
+  padding: 1.25rem 4rem;
+  position: absolute;
+  right: 0;
+}
+.restaurant .restaurant__bot .see-more {
+  margin: auto 0;
+}
+
+.booking {
+  background-color: var(--color-bg2);
+  height: 1000px;
+  padding-top: 16.5625rem;
+}
+.booking .booking__main {
+  margin: 0 auto;
+  margin-right: 25.9375rem;
+  width: 70%;
+  height: 560px;
+  background-color: var(--color-white);
+  text-align: center;
+  padding: 6.25rem 6.25rem 25rem 15.625rem;
+}
+.booking .booking__main .main__top #redline {
+  margin: 0 auto;
+  width: 20%;
+  height: 0.9375rem;
+  background-color: var(--color-red);
+}
+.booking .booking__main .main__top h2 {
+  margin-top: 1.25rem;
+}
+.booking .booking__main .main__mid .booking__search {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  max-width: 41.875rem;
+  margin-left: 8.4375rem;
+  margin-top: 3.75rem;
+  background-color: var(--color-white);
+  box-shadow: 0.125rem 0.125rem 1.875rem 0.125rem var(--color-bg1);
+}
+.booking .booking__main .main__mid .booking__search #text {
+  width: 70%;
+  width: 100%;
+  padding: 2.25rem;
+  border: none;
+}
+.booking .booking__main .main__mid .booking__search #button {
+  width: 30%;
+  margin: 0.875rem 0.875rem 0.875rem 0;
+  height: auto;
+  border: none;
+  background-color: var(--color-red);
+}
+
+header section .left__top h2 {
+  color: var(--color-red);
+  font-size: 4.5em;
+  line-height: 6.75rem;
+  font-weight: 700;
+}
+header section .left__top nav a {
+  text-decoration: none;
+  color: var(--color-text-grey);
+}
+header section .left__main h1 {
+  color: var(--color-text-blue);
+  opacity: 0.05;
+  font-size: 12.5em;
+  line-height: 18.75rem;
+  font-weight: 900;
+}
+header section .left__main h3 {
+  color: var(--color-text-blue);
+  font-size: 4.5em;
+  font-weight: 700;
+}
+header section .left__main .search {
+  display: flex;
+  max-width: 41.875rem;
+  margin-left: 8.4375rem;
+  background-color: var(--color-white);
+}
+header section .left__main .search #text {
+  font-size: 1.125em;
+}
+header section .left__main .search #button {
+  font-size: 1.875em;
+  color: var(--color-white);
+  font-weight: 600;
+}
+header section .left__bottom h4 {
+  color: var(--color-white);
+  font-size: 1.875em;
+  font-weight: 500;
+}
+header aside .right__top {
+  color: var(--color-white);
+}
+header aside .right__top img {
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+.restaurant .restaurant__top .top_left h2 {
+  color: var(--color-text-blue);
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 3.875rem;
+}
+.restaurant .restaurant__top .top_right p {
+  font-size: 0.875em;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.restaurant .restaurant__bot .fire-water {
+  border-radius: 20px;
+}
+.restaurant .restaurant__bot .fire-water #content {
+  color: var(--color-white);
+  border-radius: 0px 0px 20px 20px;
+}
+.restaurant .restaurant__bot .fire-water #content input {
+  color: var(--color-red);
+  border-radius: 6.25rem 0 0 6.25rem;
+  border: none;
+}
+.restaurant .restaurant__bot .woton {
+  border-radius: 20px;
+}
+.restaurant .restaurant__bot .woton #content {
+  color: var(--color-white);
+  border-radius: 0px 0px 20px 20px;
+}
+.restaurant .restaurant__bot .woton #content input {
+  color: var(--color-red);
+  border-radius: 6.25rem 0 0 6.25rem;
+  border: none;
+}
+.booking .booking__main .main__top h2 {
+  text-transform: none;
+  color: var(--color-text-blue);
+  font-size: 2.25em;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.booking .booking__main .main__mid .booking__search #text {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--color-text-grey);
+}
+.booking .booking__main .main__mid .booking__search #button {
+  font-size: 1.875em;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
