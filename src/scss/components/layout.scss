@@ -201,17 +201,19 @@ header{
 //Booking
 .booking{
     background-color: var(--color-bg2);
-    height: 1000px;
+    height: auto;
     // padding: rem(265) rem(415) rem(265) rem(275);
     padding-top: rem(265);
+    position: relative;
+    padding-bottom: rem(265);
     .booking__main{
         margin: 0 auto;
         margin-right: rem(415);
         width: 70%;
-        height: 560px;
+        height: auto;
         background-color: var(--color-white);
         text-align: center;
-        padding: rem(100) rem(100) rem(400) rem(250);
+        padding: rem(100) rem(100) rem(120) rem(250);
         .main__top{
             #redline{
                 margin: 0 auto;
@@ -249,6 +251,239 @@ header{
                 }
             }
         }
+        .main__bot{
+            display: flex;
+            justify-content: center;
+            padding-top: rem(60);
+            .main_bot1{
+                width: 20%;
+                #main__bot--item1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        margin-right: rem(10);
+                        
+                    }
+                }
+            }
+            .main_bot2{
+                width: 20%;
+                #main__bot--item2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        margin-right: rem(10);         
+                    }
+                }
+            }
+            .main_bot3{
+                width: 20%;
+                #main__bot--item3{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        margin-right: rem(10);
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+    #booking_lecture{
+        width: 32%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    #booking_caithia{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 
+}
+
+//Service
+.services{
+        height: auto;
+        .services__top{
+            display: flex;
+            margin-top: rem(163);
+            .top__left{
+                width: 40%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                margin-left: rem(135);
+                margin-right: 0;
+                div{
+                    width: 5%;
+                    height: 8rem;
+                    background-color: var(--color-red);
+                    margin-right: rem(30);
+                }
+            }
+            .top__right{
+                width: 35%;
+                height: auto;
+            }
+        }
+        .services__bot{
+            display: flex;
+            padding: rem(150) rem(135);
+            justify-content: space-between;
+            #bot__left{
+                width: 55%;
+                #left1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    #left1__img{
+                        background-color: var(--color-bg2);
+                        padding: rem(90);
+                    }
+                    #left1__text{
+                        width: 40%;
+                    }
+                }
+                #left2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    #left2__img{
+                        background-color: var(--color-bg2);
+                        padding: rem(90);
+                    }
+                    #left2__text{
+                        width: 40%;
+                    }
+                }
+            }
+            #bot__right{
+                width: 40%;
+                background-color: var(--color-bg2);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                #right__text{
+                    width: 50%;
+                    text-align: center;
+                    div{
+                        background-color: red;
+                        width: rem(192);
+                        height: rem(3);
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+}
+
+//explore
+.explore{
+    height: auto;
+    padding: rem(50) rem(150);
+    .exp__top{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        h2{}
+        p{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: rem(50);
+            margin-bottom: rem(50);
+        }
+    }
+    .exp__bot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .exp__item{
+            width: 31%;
+            background-color: var(--color-white);
+            margin-bottom: rem(50);
+            img{
+                width: 100%;
+            }
+            .item__text{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                padding: rem(20);
+                h3{
+                    width: 50%;
+                    margin: 0;
+                }
+                h4{
+                    width: 50%;
+                    text-align: right;
+                    margin: 0;
+                }
+                p{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+//app
+.app{
+    height: auto;
+    padding: rem(300) rem(150) ;
+    position: relative;
+    .app__left{
+        .left__top{
+            display: flex;
+            align-items: center;
+            div{
+                height: 100px;
+                width: 20px;
+                background-color: var(--color-red);
+                margin-right: rem(30);
+            }
+            h2{
+                width: 40%;
+            }
+        }
+        .left__bot{
+            text-align: left;
+            p{
+                width: 40%;
+            }
+        }
+    }
+    #phone{
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translate(0,-50%);
+        width: 25%;
+        z-index: 2;
+    }
+    #lecture{
+        position: absolute;
+        right: 15%;
+        top: 50%;
+        width: 30%;
+        transform: translate(0,-50%);
+    }
+
+}
+
+//footer
+footer{
+    height: 1000px;
+    display: flex;
+    .left{}
+    .main{}
+    .right{}
 }

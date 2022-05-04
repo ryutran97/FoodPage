@@ -139,7 +139,116 @@ header{
                     font-size: em(30);
                     color: var(--color-white);
                     font-weight: 600;
+                    // line-height: rem(90);
                 }
+            }
+        }
+        .main__bot{
+            p{
+                color: var(--color-text-blue);
+                font-size: em(16);
+                font-weight: 400;
+            }
+            i{
+                color: var(--color-red);
+            }
+            h1{
+                color: var(--color-text-blue);
+                font-size: em(16);
+                font-weight: 400;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+//Service
+.services{
+    .services__top{
+        .top__left{
+            h2{
+                color: var(--color-text-blue);
+                font-size: em(48);
+                font-weight: 500;
+                line-height: rem(62);
+            }
+        }
+        .top__right{
+            p{
+                color: var(--color-text-grey);
+                font-size: em(14);
+                line-height: rem(24);
+                font-weight: 400;
+            }
+        }
+    }
+    .services__bot{
+        h1{
+            color: var(--color-text-blue);
+            font-size: em(24);
+            font-weight: 500;
+        }
+        p{
+            color: var(--color-text-grey);
+            font-size: em(16);
+            font-weight: 400;
+        }
+    }
+}
+
+//explore
+.explore{
+    .exp__top{
+        h2{
+            font-size: em(48);
+            color: var(--color-text-blue);
+            font-weight: 500;
+        }
+        p{
+            font-size: em(14);
+            color: var(--color-text-grey);
+            font-weight: 400;
+        }
+    }
+    .exp__bot{
+        .exp__item{
+            border-radius: rem(25);
+            h3{
+                font-size: em(24);
+                font-weight: 500;
+                color: var(--color-text-blue);
+            }
+            h4{
+                font-size: em(24);
+                color: var(--color-red);
+                font-weight: 700;
+            }
+            p{
+                font-size: em(14);
+                color: var(--color-text-grey);
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+//app
+.app{
+    background-color: var(--color-bg2);
+    .app__left{
+        .left__top{
+            div{}
+            h2{
+                font-size: em(48);
+                font-weight: 500;
+                color: var(--color-text-blue);
+            }
+        }
+        .left__bot{
+            p{
+                color: var(--color-text-grey);
+                font-size: em(14);
+                font-weight: 400;
             }
         }
     }

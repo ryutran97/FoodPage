@@ -215,17 +215,19 @@ header aside .right__bottom {
 
 .booking {
   background-color: var(--color-bg2);
-  height: 1000px;
+  height: auto;
   padding-top: 16.5625rem;
+  position: relative;
+  padding-bottom: 16.5625rem;
 }
 .booking .booking__main {
   margin: 0 auto;
   margin-right: 25.9375rem;
   width: 70%;
-  height: 560px;
+  height: auto;
   background-color: var(--color-white);
   text-align: center;
-  padding: 6.25rem 6.25rem 25rem 15.625rem;
+  padding: 6.25rem 6.25rem 7.5rem 15.625rem;
 }
 .booking .booking__main .main__top #redline {
   margin: 0 auto;
@@ -259,7 +261,225 @@ header aside .right__bottom {
   border: none;
   background-color: var(--color-red);
 }
+.booking .booking__main .main__bot {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.75rem;
+}
+.booking .booking__main .main__bot .main_bot1 {
+  width: 20%;
+}
+.booking .booking__main .main__bot .main_bot1 #main__bot--item1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking .booking__main .main__bot .main_bot1 #main__bot--item1 p {
+  margin-right: 0.625rem;
+}
+.booking .booking__main .main__bot .main_bot2 {
+  width: 20%;
+}
+.booking .booking__main .main__bot .main_bot2 #main__bot--item2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking .booking__main .main__bot .main_bot2 #main__bot--item2 p {
+  margin-right: 0.625rem;
+}
+.booking .booking__main .main__bot .main_bot3 {
+  width: 20%;
+}
+.booking .booking__main .main__bot .main_bot3 #main__bot--item3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking .booking__main .main__bot .main_bot3 #main__bot--item3 p {
+  margin-right: 0.625rem;
+}
+.booking #booking_lecture {
+  width: 32%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.booking #booking_caithia {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
 
+.services {
+  height: auto;
+}
+.services .services__top {
+  display: flex;
+  margin-top: 10.1875rem;
+}
+.services .services__top .top__left {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-left: 8.4375rem;
+  margin-right: 0;
+}
+.services .services__top .top__left div {
+  width: 5%;
+  height: 8rem;
+  background-color: var(--color-red);
+  margin-right: 1.875rem;
+}
+.services .services__top .top__right {
+  width: 35%;
+  height: auto;
+}
+.services .services__bot {
+  display: flex;
+  padding: 9.375rem 8.4375rem;
+  justify-content: space-between;
+}
+.services .services__bot #bot__left {
+  width: 55%;
+}
+.services .services__bot #bot__left #left1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services .services__bot #bot__left #left1 #left1__img {
+  background-color: var(--color-bg2);
+  padding: 5.625rem;
+}
+.services .services__bot #bot__left #left1 #left1__text {
+  width: 40%;
+}
+.services .services__bot #bot__left #left2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services .services__bot #bot__left #left2 #left2__img {
+  background-color: var(--color-bg2);
+  padding: 5.625rem;
+}
+.services .services__bot #bot__left #left2 #left2__text {
+  width: 40%;
+}
+.services .services__bot #bot__right {
+  width: 40%;
+  background-color: var(--color-bg2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.services .services__bot #bot__right #right__text {
+  width: 50%;
+  text-align: center;
+}
+.services .services__bot #bot__right #right__text div {
+  background-color: red;
+  width: 12rem;
+  height: 0.1875rem;
+  margin: 0 auto;
+}
+
+.explore {
+  height: auto;
+  padding: 3.125rem 9.375rem;
+}
+.explore .exp__top {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.explore .exp__top p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+.explore .exp__bot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.explore .exp__bot .exp__item {
+  width: 31%;
+  background-color: var(--color-white);
+  margin-bottom: 3.125rem;
+}
+.explore .exp__bot .exp__item img {
+  width: 100%;
+}
+.explore .exp__bot .exp__item .item__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.25rem;
+}
+.explore .exp__bot .exp__item .item__text h3 {
+  width: 50%;
+  margin: 0;
+}
+.explore .exp__bot .exp__item .item__text h4 {
+  width: 50%;
+  text-align: right;
+  margin: 0;
+}
+.explore .exp__bot .exp__item .item__text p {
+  width: 50%;
+}
+
+.app {
+  height: auto;
+  padding: 18.75rem 9.375rem;
+  position: relative;
+}
+.app .app__left .left__top {
+  display: flex;
+  align-items: center;
+}
+.app .app__left .left__top div {
+  height: 100px;
+  width: 20px;
+  background-color: var(--color-red);
+  margin-right: 1.875rem;
+}
+.app .app__left .left__top h2 {
+  width: 40%;
+}
+.app .app__left .left__bot {
+  text-align: left;
+}
+.app .app__left .left__bot p {
+  width: 40%;
+}
+.app #phone {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 25%;
+  z-index: 2;
+}
+.app #lecture {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  width: 30%;
+  transform: translate(0, -50%);
+}
+
+footer {
+  height: 1000px;
+  display: flex;
+}
 header section .left__top h2 {
   color: var(--color-red);
   font-size: 4.5em;
@@ -360,6 +580,86 @@ header aside .right__top img {
   font-size: 1.875em;
   color: var(--color-white);
   font-weight: 600;
+}
+.booking .booking__main .main__bot p {
+  color: var(--color-text-blue);
+  font-size: 1em;
+  font-weight: 400;
+}
+.booking .booking__main .main__bot i {
+  color: var(--color-red);
+}
+.booking .booking__main .main__bot h1 {
+  color: var(--color-text-blue);
+  font-size: 1em;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.services .services__top .top__left h2 {
+  color: var(--color-text-blue);
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 3.875rem;
+}
+.services .services__top .top__right p {
+  color: var(--color-text-grey);
+  font-size: 0.875em;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.services .services__bot h1 {
+  color: var(--color-text-blue);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.services .services__bot p {
+  color: var(--color-text-grey);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.explore .exp__top h2 {
+  font-size: 3em;
+  color: var(--color-text-blue);
+  font-weight: 500;
+}
+.explore .exp__top p {
+  font-size: 0.875em;
+  color: var(--color-text-grey);
+  font-weight: 400;
+}
+.explore .exp__bot .exp__item {
+  border-radius: 1.5625rem;
+}
+.explore .exp__bot .exp__item h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--color-text-blue);
+}
+.explore .exp__bot .exp__item h4 {
+  font-size: 1.5em;
+  color: var(--color-red);
+  font-weight: 700;
+}
+.explore .exp__bot .exp__item p {
+  font-size: 0.875em;
+  color: var(--color-text-grey);
+  font-weight: 400;
+}
+
+.app {
+  background-color: var(--color-bg2);
+}
+.app .app__left .left__top h2 {
+  font-size: 3em;
+  font-weight: 500;
+  color: var(--color-text-blue);
+}
+.app .app__left .left__bot p {
+  color: var(--color-text-grey);
+  font-size: 0.875em;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
